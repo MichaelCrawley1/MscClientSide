@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Plian text & AJAX Local Web Service</title>
+	<link rel="stylesheet" href="movies.css">
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+	<script src="js/jqueryPlainText.js" ></script>
+
+</head>
+<body>
+
+	<header>
+		<h1>Plain text & AJAX Local Web Service</h1>
+		
+		<p>The following table will be filled by ajax on the click of the button</p>
+		<button id="btn">Fetch Info for Movie Data</button>
+
+		<table id="movies_table" class="table"> 
+
+
+			<thead>
+				<tr>
+					<th>Title</th>
+					<th>Year</th>
+					<th>Genre</th>
+					<th>Lead Actor</th>
+					<th>Director</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+		
+	</header>
+	<div id="movieInfo"></div>
+	
+</body>
+</html>

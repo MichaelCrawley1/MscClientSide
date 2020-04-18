@@ -1,0 +1,36 @@
+<script>
+var xhp;
+function begin(){
+xhp = new XMLHttpRequest();
+xhp.onreadystatechange = function(){
+if (this.readyState==4 && this.status==200){
+var ourData = this.responseText;
+htmlData(ourData);
+}
+};
+xhp.open("GET", "enter url of client side application you wish to put through batch testing", true);
+xhp.send();
+}
+function htmlData (data){
+document.open("text/html", "replace");
+document.write(data);
+document.close();
+var reloads = Array(1999).fill(1000);
+            storageKey = 'reloadIndex',
+            reloadIndex = parseInt(localStorage.getItem(storageKey), 10) || 0;
+
+        if (reloadIndex >= reloads.length || isNaN(reloadIndex)) {
+            localStorage.removeItem(storageKey);
+            return;
+        }
+
+        setTimeout(function(){
+            window.location.reload(true);
+        }, reloads[reloadIndex]);
+
+        localStorage.setItem(storageKey, parseInt(reloadIndex, 10) + 1);
+    }
+window.addEventListener("load", begin, true);
+</script>
+
+
