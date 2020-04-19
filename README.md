@@ -26,7 +26,7 @@ Created by Michael Crawley
 
 -	This is the client-side environment provided by the software Xampp.  For the web service environment repository, please copy and paste the following url into your address bar: https://github.com/MichaelCrawley1/MscServerSide1
 
--	To replicate these web perofremance tests please note this is for a windows environment only.  The software Xampp is a very heavy software, please expect one to two hours downloading time for each local environment.
+-	To replicate these web performance tests please note this is for a windows environment only.  The software Xampp is a very heavy software, please expect one to two hours downloading time for each local environment.
 
 -	After downloading it is recommended to store these two environments in two different usb ports
 
